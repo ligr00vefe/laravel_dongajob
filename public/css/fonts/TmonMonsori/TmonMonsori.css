@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url(TmonMonsori.eot);
+    src: url(TmonMonsori.eot?#iefix) format('embedded-opentype'),
+    url(TmonMonsori.woff2) format('woff2'),
+    url(TmonMonsori.woff) format('woff'),
+    url(TmonMonsori.ttf) format('truetype');
+}

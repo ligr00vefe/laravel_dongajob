@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'GmarketSansLight';
+    src:url('GmarketSansLight.woff') format('woff'),
+    url('GmarketSansLight.woff2') format('woff2'),
+    url('GmarketSansLight.ttf') format('truetype'),
+    url('GmarketSansLight.eot'),
+    url('GmarketSansLight.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src:url('GmarketSansMedium.woff') format('woff'),
+    url('GmarketSansMedium.woff2') format('woff2'),
+    url('GmarketSansMedium.ttf') format('truetype'),
+    url('GmarketSansMedium.eot'),
+    url('GmarketSansMedium.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src:url('GmarketSansBold.woff') format('woff'),
+    url('GmarketSansBold.woff2') format('woff2'),
+    url('GmarketSansBold.ttf') format('truetype'),
+    url('GmarketSansBold.eot'),
+    url('GmarketSansBold.eot?#iefix') format('embedded-opentype');
+}

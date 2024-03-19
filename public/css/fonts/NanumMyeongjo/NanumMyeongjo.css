@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('※'),
+        url('NanumMyeongjoR.woff') format('woff'),
+        url('NanumMyeongjoR.ttf') format('truetype'),
+        url('NanumMyeongjoR.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: bold;
+    src: local('※'),
+        url('NanumMyeongjoB.woff') format('woff'),
+        url('NanumMyeongjoB.ttf') format('truetype'),
+        url('NanumMyeongjoB.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 900;
+    src: local('※'),
+        url('NanumMyeongjoEB.woff') format('woff'),
+        url('NanumMyeongjoEB.ttf') format('truetype'),
+        url('NanumMyeongjoEB.eot') format('embedded-opentype');
+}

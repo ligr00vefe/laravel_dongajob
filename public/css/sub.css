@@ -1,0 +1,111 @@
+
+/* 카테고리명 타이틀, 탑배너 */
+.sub-content_title{width: 100%; display: block; }
+.sub-content_title h1{font-size:35px; text-align: center; font-family: 'paybooc-ExtraBold'; }
+.sub-content_title h1 span{color:#0061AE; font-family: 'paybooc-Bold';}
+.sub_topbanner_wrap{width: 100%; padding: 30px 0;}
+.sub_topbanner_wrap img{width: 100%;}
+.content_imgwrap .top_pc{width: 100%;}
+.content_imgwrap .top_tab{display: none;}
+.content_imgwrap .top_m{display: none;}
+
+.sub_topbanner_wrap h2{
+    font-size: 18px;
+    color: #01387F;
+    font-family: 'paybooc-ExtraBold';
+    padding-bottom: 15px;
+    letter-spacing: -1px;
+}
+.sub_topbanner_wrap p{
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -1px;
+}
+
+@media (max-width: 768px){
+    #app #main .content-body{margin:50px 0 29px;}
+    .sub-content_title h1{font-size:25px; }
+    .content_imgwrap .top_pc{display: none;}
+    .content_imgwrap .top_tab{width: 100%; display: block;}
+    .content_imgwrap .top_m{display: none;}
+}
+
+@media (max-width: 500px){
+    .sub-content_title h1{font-size:18px; }
+    .content_imgwrap .top_pc{display: none;}
+    .content_imgwrap .top_tab{display: none;}
+    .content_imgwrap .top_m{width: 100%; display: block;}
+    .sub_topbanner_wrap h2{
+        font-size: 16px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .sub_topbanner_wrap p{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+
+/* 이미지 영역 */
+.content_imgwrap{width: 100%;}
+.content_imgwrap img{width: 100%;}
+
+
+/* 블릿 타이틀 */
+.sub_container_wrap{width: 100%; display: block;}
+.sub_container_wrap .bullet_content_wrap .bullet_title{
+    font-size:22px;
+    font-family: 'paybooc-Bold';
+    position:relative;
+    padding-left:25px;
+}
+.sub_container_wrap .bullet_content_wrap .bullet_title:after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url(/img/title_bullet.png);
+}
+
+@media (max-width: 1280px){
+
+    .sub_container_wrap .bullet_content_wrap .bullet_title{
+        font-size:16px;
+        font-family: 'paybooc-Bold';
+        position:relative;
+        padding-left:20px;
+    }
+    .sub_container_wrap .bullet_content_wrap .bullet_title:after{
+        top: 2px;
+    }
+}
+
+
+
+
+/* 컨텐츠 기본 폰트 */
+.sub_container_wrap .content_basic_txt_wrap {padding-top:22px; width: 100%;}
+.sub_container_wrap .content_basic_txt_wrap p{font-size: 16px; line-height: 26px;}
+
+@media (max-width: 1280px){
+    .sub_container_wrap .content_basic_txt_wrap p{font-size: 14px; line-height: 24px;}
+}
+
+
+/* 탭 메뉴 */
+.subtab_menu_wrap ul li{
+    float : left;
+    width: 16.66666666666667%;
+    text-align: center;
+    border-top : 1px solid ;
+}
+
+
+/* 패팅, 마진값 */
+.pdt30{padding-top:30px;}
+.pdt50{padding-top: 50px;}
+.pdt20{padding-top:20px;}
+.pdb30{padding-bottom: 30px;}

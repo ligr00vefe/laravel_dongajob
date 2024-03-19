@@ -1,0 +1,83 @@
+@font-face {
+    font-family:'S-Core Dream';
+    font-weight: 100;
+    src: url('SCDream1.woff') format('woff'),
+    url('SCDream1.otf'),
+    url('SCDream1.ttf') format('truetype'),
+    url('SCDream1.eot');
+}
+
+@font-face {
+    font-family:'S-Core Dream';
+    font-weight: 200;
+    src: url('SCDream2.woff') format('woff'),
+    url('SCDream2.otf'),
+    url('SCDream2.ttf') format('truetype'),
+    url('SCDream2.eot');
+}
+
+@font-face {
+    font-family:'S-Core Dream';
+    font-weight: 300;
+    font-style: normal;
+    src: url('SCDream3.woff') format('woff'),
+    url('SCDream3.otf'),
+    url('SCDream3.ttf') format('truetype'),
+    url('SCDream3.eot');
+}
+
+@font-face {
+    font-family:'S-Core Dream';
+    font-weight: 400;
+    src: url('SCDream4.woff') format('woff'),
+    url('SCDream4.otf'),
+    url('SCDream4.ttf') format('truetype'),
+    url('SCDream4.eot');
+}
+
+@font-face {
+    font-family:'S-Core Dream';
+    font-weight: 500;
+    src: url('SCDream5.woff') format('woff'),
+    url('SCDream5.otf'),
+    url('SCDream5.ttf') format('truetype'),
+    url('SCDream5.eot');
+}
+
+@font-face {
+    font-family:'S-Core Dream';
+    font-weight: bold;
+    src: url('SCDream6.woff') format('woff'),
+    url('SCDream6.otf'),
+    url('SCDream6.ttf') format('truetype'),
+    url('SCDream6.eot');
+}
+
+@font-face {
+    font-family:'S-Core Dream';
+    font-weight: 700;
+    src: url('SCDream7.woff') format('woff'),
+    url('SCDream7.otf'),
+    url('SCDream7.ttf') format('truetype'),
+    url('SCDream7.eot');
+}
+
+@font-face {
+    font-family:'S-Core Dream';
+    font-weight: 800;
+    src: url('SCDream8.woff') format('woff'),
+    url('SCDream8.otf'),
+    url('SCDream8.ttf') format('truetype'),
+    url('SCDream8.eot');
+}
+
+@font-face {
+    font-family:'S-Core Dream';
+    font-weight: 900;
+    src: url('SCDream9.woff') format('woff'),
+    url('SCDream9.otf'),
+    url('SCDream9.ttf') format('truetype'),
+    url('SCDream9.eot');
+}
+
+

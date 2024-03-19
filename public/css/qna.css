@@ -1,0 +1,165 @@
+/* 상단 배너 */
+
+.sub_topbanner_wrap .top_pc{
+    width: 100%;
+    max-width: 1200px;
+    border-radius:15px;
+    overflow: hidden;
+    max-height: 179px;
+}
+.sub_topbanner_wrap .top_tab{
+    display: none;
+}
+.sub_topbanner_wrap .top_m{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_topbanner_wrap .top_tab{
+        width: 100%;
+        max-width: 800px;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+        display: block;
+    }
+    .sub_topbanner_wrap .top_m{
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_topbanner_wrap .top_tab{
+        display: none;
+    }
+    .sub_topbanner_wrap .top_m{
+        width: 100%;
+        max-width: 500px;
+        display: block;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+    }
+
+}
+
+.content_basic_txt_wrap .blue_line_box_wrap{ border-radius: 10px; border: 2px solid #01387F; text-align: center; padding: 20px 50px; width: 30%;}
+.content_basic_txt_wrap .blue_line_box_wrap .blue_txt{color: #01387F; font-family: 'paybooc-Bold';}
+@media (max-width: 1000px) {
+    .content_basic_txt_wrap .blue_line_box_wrap{ padding: 20px 50px; width: 50%;}
+}
+@media (max-width: 500px) {
+    .content_basic_txt_wrap .blue_line_box_wrap{ padding: 20px 50px; width: 100%;}
+}
+
+.content_basic_txt_wrap .dot_bullet_tit{
+    position:relative;
+    padding-left:12px;
+    font-size: 18px;
+    font-family: 'paybooc-Bold';
+}
+.content_basic_txt_wrap .dot_bullet_tit:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #01387F;
+    border-radius: 50%;
+}
+.content_basic_txt_wrap .gray_bg_box{
+    background: #F5F5F5;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top:15px;
+}
+.gray_bg_box table tr{line-height: 80px;}
+.gray_bg_box table tr th{color: #01387F; font-size: 18px; font-weight: 600; padding-right: 30px;}
+.gray_bg_box table tr td{line-height: 28px;}
+
+.gray_bg_box table .ex_blue_txt{
+
+}
+
+@media (max-width: 1000px) {
+
+    .content_basic_txt_wrap .dot_bullet_tit{
+        font-size: 16px;
+    }
+    .gray_bg_box table tr td{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .gray_bg_box table tr th{
+        font-size: 16px;
+    }
+}
+
+
+/* 운영시간 기타문의사항 */
+.time_cscenter_wrap {width: 100%; overflow: hidden; display: inline-block; border-radius: 10px; border: 2px solid #DFDFDF; padding: 25px 0; margin-top: 30px;}
+.time_cscenter_wrap .half_wrap{width: 50%; float: left; border-right: 1px solid #DFDFDF; padding: 0 100px; }
+.time_cscenter_wrap .half_wrap .time_txt{ position: relative; padding-left: 80px;}
+.time_cscenter_wrap .half_wrap .time_txt:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 59px;
+    background:url(/img/time_icon.png) no-repeat;
+}
+.time_cscenter_wrap .half_wrap .cs_txt{ position: relative; padding-left: 100px;}
+.time_cscenter_wrap .half_wrap .cs_txt:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 59px;
+    background:url(/img/phone_call.png) no-repeat;
+}
+.time_cscenter_wrap .half_wrap h3{font-size: 18px; letter-spacing: -1px; font-weight: bold;}
+.time_cscenter_wrap .half_wrap p{font-size: 14px;}
+.time_cscenter_wrap .half_wrap .blue_txt{color: #0061AE;}
+
+@media (max-width: 1000px) {
+    .time_cscenter_wrap .half_wrap{width: 100%; padding: 30px 100px; }
+    .time_cscenter_wrap .half_wrap h3{font-size: 16px; line-height: 24px;}
+    .time_cscenter_wrap .half_wrap p{font-size: 13px;}
+    .time_cscenter_wrap .half_wrap .cs_txt{ position: relative; padding-left: 80px;}
+}
+
+@media (max-width: 500px) {
+
+    .time_cscenter_wrap {padding: 10px 0; }
+    .time_cscenter_wrap .half_wrap .time_txt:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 49px;
+        background:url(/img/time_icon.png) no-repeat;
+        background-size: 50px 49px;
+    }
+    .time_cscenter_wrap .half_wrap .cs_txt:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 49px;
+        background:url(/img/phone_call.png) no-repeat;
+        background-size: 50px 49px;
+    }
+    .time_cscenter_wrap .half_wrap{width: 100%; padding: 20px 40px; }
+}

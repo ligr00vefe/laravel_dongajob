@@ -1,0 +1,201 @@
+/* 상단 배너 */
+
+.sub_topbanner_wrap .top_pc1{
+    display: block;
+    background:#01387F no-repeat top right / cover;
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px 0;
+    height: auto;
+    text-align: center;
+    border-radius:10px;
+    overflow: hidden;
+}
+.sub_topbanner_wrap .top_pc1 .topbanner_title{
+    font-size: 18px;
+    font-family: 'paybooc-Bold';
+}
+.sub_topbanner_wrap .top_pc1 p{
+    color: #fff;
+}
+
+
+
+.sub_topbanner_wrap .top_pc2{
+    position: relative;
+    height: 400px;
+}
+
+.sub_topbanner_wrap .top_pc2 .post_img_wrap{
+    position: absolute;
+    top:30px;
+    right: 50px;
+    max-width: 554px;
+}
+
+.sub_topbanner_wrap .top_pc2 .gray_bg_wrap .post_img_wrap_m{
+   display: none;
+}
+
+
+.sub_topbanner_wrap .top_pc2 .gray_bg_wrap{
+    display: block;
+    background:#F5F5F5;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    height: auto;
+    border-radius:10px;
+}
+
+@media (max-width: 1000px) {
+    .sub_topbanner_wrap .top_pc2 .post_img_wrap{
+        display: none;
+    }
+    .sub_topbanner_wrap .top_pc2 .gray_bg_wrap .post_img_wrap_m{
+        max-width: 554px;
+        padding-top: 30px;
+        display: block;
+    }
+    .sub_topbanner_wrap .top_pc2{
+        position: relative;
+        height: 670px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .sub_topbanner_wrap .top_pc2{
+        position: relative;
+        height: 570px;
+    }
+}
+
+
+/* 상단 배너 블릿 타이틀 */
+.sub_topbanner_wrap .top_pc2 .gray_bg_wrap .bullet_title{
+    font-size:22px;
+    font-family: 'paybooc-Bold';
+    position:relative;
+    padding-left:25px;
+    color: #01387F;
+}
+.sub_topbanner_wrap .top_pc2 .gray_bg_wrap .bullet_title:after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url(/img/title_bullet.png);
+}
+
+
+.sub_topbanner_wrap .top_pc2 .gray_bg_wrap .dot_bullet_wrap{
+    position:relative;
+    padding-left:12px;
+}
+.sub_topbanner_wrap .top_pc2 .gray_bg_wrap .dot_bullet_wrap:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #01387F;
+    border-radius: 50%;
+}
+@media (max-width: 768px) {
+    .sub_topbanner_wrap .top_pc2 .gray_bg_wrap .bullet_title{font-size: 18px;}
+}
+
+@media (max-width: 500px) {
+    .sub_topbanner_wrap .top_pc2 .gray_bg_wrap .dot_bullet_wrap{text-align: left;}
+}
+
+
+/* 블릿 타이틀 */
+.bullet_gray_bg_wrap .dot_bullet_wrap{
+    position:relative;
+    padding-left:15px;
+    color: #01387F;
+    font-family: 'paybooc-Bold';
+    font-size: 20px;
+}
+.bullet_gray_bg_wrap .dot_bullet_wrap:after{
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #01387F;
+    border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+
+    .gray_bg_wrap .top_pc_half .dot_bullet_wrap{
+        text-align: left;
+    }
+    .bullet_gray_bg_wrap .dot_bullet_wrap{
+        font-size: 16px;
+    }
+    .bullet_gray_bg_wrap .dot_bullet_wrap:after{top:7px;}
+}
+
+
+.bullet_gray_bg_wrap .gray_bg{
+    background: #F5F5F5;
+    padding: 20px 30px;
+    margin-top: 15px;
+}
+
+.bullet_gray_bg_wrap .gray_bg p{
+    line-height: 26px;
+}
+
+@media (max-width: 1000px) {
+    .bullet_gray_bg_wrap .gray_bg p{
+        line-height: 24px;
+        font-size: 14px;
+    }
+}
+
+
+/* 버튼 */
+.top_pc2 .gray_bg_wrap .link_blue_button button{display:block;height:100%;background:#01387F; border:0;border-radius: 10px; padding:15px 20px; width: 438px; margin-top:20px; position:relative;text-align: left;cursor:pointer;}
+.top_pc2 .gray_bg_wrap .link_blue_button button:after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 86px;
+    height: 15px;
+    background:url(/img/arrow.png);
+}
+.top_pc2 .gray_bg_wrap .link_blue_button button span {display:block;width:100%;color: #fff; font-size: 15px;}
+
+@media (max-width: 500px) {
+    .top_pc2 .gray_bg_wrap .link_blue_button button{text-align: center; width: 100%; border:0;}
+    .top_pc2 .gray_bg_wrap .link_blue_button button:after{display: none;}
+    .top_pc2 .gray_bg_wrap .link_blue_button button span{font-size: 14px;}
+}
+
+
+
+.content_basic_txt_wrap h3{
+    color: #01387F;
+    font-size: 20px;
+    font-family: 'paybooc-Bold';
+    line-height: 35px;
+}
+
+@media (max-width: 1000px) {
+    .content_basic_txt_wrap h3{
+        font-size: 15px;
+    }
+}
+
+
+

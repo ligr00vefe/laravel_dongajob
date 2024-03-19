@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url(NanumBarunGothicLight.eot);
+    src: url(NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'),
+    url(NanumBarunGothicLight.woff2) format('woff2'),
+    url(NanumBarunGothicLight.woff) format('woff'),
+    url(NanumBarunGothicLight.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url(NanumBarunGothicBold.eot);
+    src: url(NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+    url(NanumBarunGothicBold.woff2) format('woff2'),
+    url(NanumBarunGothicBold.woff) format('woff'),
+    url(NanumBarunGothicBold.ttf) format('truetype');
+    font-weight: bold;
+}

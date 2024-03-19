@@ -1,0 +1,94 @@
+{
+  "menu": [
+    {
+      "name" : "취업지원실",
+      "link" : "/support/introduce",
+      "sub" : [
+        {"name" : "구성원소개", "link" : "/support/introduce", "menu" : "10"},
+        {"name" : "찾아오시는 길", "link" : "/support/location", "menu" : "20"},
+        {"name" : "취업교육기금", "link" : "/support/educash", "menu" : "30"},
+        {"name" : "취업프로그램 소개", "link" : "/support/employmentinfo", "menu" : "40"},
+        {"name" : "Q&A", "link" : "/support/qna", "menu" : "50"}
+      ]
+    },
+    {
+      "name" : "채용정보",
+      "link" : "/jobinfo/recommend",
+      "sub" : [
+        {"name" : "추천채용", "link" : "/jobinfo/recommend", "menu" : "10"},
+        {"name" : "동아친화기업300", "link" : "/jobinfo/donga300", "menu" : "20"},
+        {"name" : "일반채용", "link" : "/jobinfo/normal", "menu" : "30"},
+        {"name" : "각종 활동", "link" : "/jobinfo/activity", "menu" : "40"},
+        {"name" : "취업컨설턴트PICK", "link" : "/jobinfo/pick", "menu" : "50"}
+      ]
+    },
+    {
+      "name" : "온라인 취업컨텐츠",
+      "link" : "/online/toeic",
+      "sub" : [
+        {"name" : "토익/토익스피킹 할인접수", "link" : "/online/toeic", "menu" : "10"},
+        {"name" : "기업/직무/산업 분석&인강(위포트)", "link" : "/online/onlinelecture", "menu" : "20"},
+        {"name" : "AI자기소개서 작성 및 평가(에듀스)", "link" : "/online/ai", "menu" : "30"},
+        {"name" : "취업진로진단 검사(에듀스)", "link" : "/online/checkup", "menu" : "40"},
+        {"name" : "잡플래닛", "link" : "/online/jobplanet", "menu" : "50", "target" : "_blank"}
+      ]
+    },
+    {
+      "name" : "취업지원실 프로그램",
+      "link" : "/program/notice",
+      "sub" : [
+        {"name" : "공지사항", "link" : "/program/notice", "menu" : "10"},
+        {"name" : "프로그램 접수", "link" : "/program/receipt", "menu" : "20"},
+        {"name" : "서류합격자 면접교육 접수", "link" : "/program/interview", "menu" : "30"},
+        {"name" : "주요일정", "link" : "/program/schedule", "menu" : "40"}
+      ]
+    },
+    {
+      "name" : "취업자료실",
+      "link" : "/archive/reviewlatest",
+      "sub" : [
+        {"name" : "최신 취업수기", "link" : "/archive/reviewlatest", "menu" : "10"},
+        {"name" : "이전 취업수기", "link" : "/archive/reviewbefore", "menu" : "20"},
+        {"name" : "프로그램 참여후기", "link" : "/archive/reviewparticipate", "menu" : "30"}
+      ]
+    },
+    {
+      "name" : "취업상담",
+      "link" : "https://rapo.donga.ac.kr",
+      "sub" : [
+        {"name" : "취업상담 신청", "link" : "https://rapo.donga.ac.kr", "menu" : "10", "target" : "_blank"},
+        {"name" : "다잇다", "link" : "https://daitdaa.donga.ac.kr/", "menu" : "20", "target" : "_blank"}
+      ]
+    },
+    {
+      "name" : "스터디룸 예약",
+      "link" : "/studyroom",
+      "sub" : [
+        {"name" : "스터디룸 예약", "link" : "/studyroom", "menu" : "10"}
+      ]
+    },
+     {
+        "name" : "워크넷 직업/진로정보",
+        "link" : "/course/employment",
+        "sub" : [
+        {"name" : "채용정보", "link" : "/course/employment", "menu" : "10"},
+        {"name" : "직업정보", "link" : "/course/jobsrch", "menu" : "20", "target" : "_blank"},
+        {"name" : "학과정보", "link" : "/course/majorsrch", "menu" : "30", "target" : "_blank"},
+        {"name" : "직무별 자소서 가이드", "link" : "/course/guide", "menu" : "40", "target" : "_blank"},
+        {"name" : "직업심리검사", "link" : "/course/jobpsyexam", "menu" : "50", "target" : "_blank"}
+      ]
+    },
+    {
+        "name" : "My Page",
+        "link" : "/mypage/recommend",
+        "sub" : [
+        {"name" : "추천채용 지원내역", "link" : "/mypage/recommend", "menu" : "10"},
+        {"name" : "프로그램 접수내역", "link" : "/mypage/receipt", "menu" : "20"},
+        {"name" : "스크랩 내역", "link" : "/mypage/scrap", "menu" : "30"},
+        {"name" : "서류합격자 면접교육 접수", "link" : "/mypage/interview", "menu" : "40"},
+        {"name" : "스터디룸 예약내역", "link" : "/mypage/studyroom", "menu" : "50"},
+        {"name" : "학생 알리미", "link" : "/mypage/alimi", "menu" : "60"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+/* 탭 */
+.sub-hide {display: none}
+.sub-view {display: block}
+
+.subtab_menu_wrap{
+    width: 100%;
+    margin: 30px 0 0 0;
+    height: auto;
+}
+.subtab_menu_wrap:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+.subtab_menu_wrap ul li{
+    width: 16.66666666666667%;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.2s;
+    border:0;
+}
+.subtab_menu_wrap li a {
+    position: relative;
+    display:block;
+    width:100%;
+    height:100%;
+    line-height:58px;
+}
+.subtab_menu_wrap ul li a:before{
+    content:'';
+    position: absolute;
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    left:0;
+    top:0;
+    border: 1px solid #C8C8C8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.subtab_menu_wrap ul li.on{
+    background-color: #00AFFF;
+}
+
+.subtab_menu_wrap ul li.on a{
+    color:#fff;
+}
+
+@media (max-width: 1000px) {
+    .subtab_menu_wrap ul li{
+        width: 50%;
+        float: left;
+        font-size: 16px;
+        text-align: center;
+        transition: 0.2s;
+    }
+}
+@media (max-width: 500px) {
+    .subtab_menu_wrap ul li{
+        width: 50%;
+        float: left;
+        font-size: 14px;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .subtab_menu_wrap li a{
+        line-height: 42px;
+    }
+}
+
+/* 표 */
+.content_table .top_gray_table {width: 100%; }
+.content_table .top_gray_table tr th{
+    background-color: #F5F5F5;
+    border-top: 1px solid #363636;
+    border-bottom:1px solid #C8C8C8;
+    border-right: 1px solid #C8C8C8;
+    padding: 18px 0;
+}
+.content_table .top_gray_table tr th:last-child{border-right: 0;}
+.content_table .top_gray_table .wd15{width: 15%;}
+.content_table .top_gray_table .wd25{width: 25%;}
+.content_table .top_gray_table .wd60{width: 60%;}
+.content_table .top_gray_table .wd35{width: 35%;}
+.content_table .top_gray_table .wd55{width: 55%;}
+.content_table .top_gray_table tr td{
+    padding: 18px;
+    border-bottom:1px solid #C8C8C8;
+    border-right: 1px solid #C8C8C8;
+    line-height: 26px;
+    word-break: keep-all;
+}
+.content_table .top_gray_table .noneright{border-right: 0;}
+.content_table .top_gray_table .centertxt{text-align: center;}
+.content_table .top_gray_table .graybg{background-color: #F5F5F5;}
+
+@media (max-width: 1200px) {
+    /* 표 스크롤 */
+    .scroll_table_box{
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+}
+
+@media (max-width: 500px){
+    .content_table .top_gray_table tr th{font-size: 15px;}
+    .content_table .top_gray_table tr td{font-size: 15px; line-height: 21px;}
+}
+
+/* --------------------------
+   취업동아리 css
+   ---------------------------*/
+.sub_section01 .sub_topbanner_wrap .top_pc{
+    display: block;
+    background:#f5f5f5 url(/img/sub1040_topbanner.png) no-repeat top right / cover;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0 40px 40px;
+    height: auto;
+    border-radius:15px;
+    overflow: hidden;
+}
+.sub_section01 .sub_topbanner_wrap .top_tab{
+    display: none;
+}
+.sub_section01 .sub_topbanner_wrap .top_m{
+    display: none;
+}
+@media (max-width: 800px) {
+    .sub_section01 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section01 .sub_topbanner_wrap .top_tab{
+        display: block;
+        background:#f5f5f5 url(/img/sub1040_topbanner_t.png) no-repeat top right / cover;
+        width: 100%;
+        max-width: 800px;
+        padding: 35px;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .sub_section01 .sub_topbanner_wrap .top_m{
+        display: none;
+    }
+
+}
+@media (max-width: 500px) {
+    .sub_section01 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section01 .sub_topbanner_wrap .top_tab{
+        display: none;
+    }
+    .sub_section01 .sub_topbanner_wrap .top_m{
+        background:#f5f5f5 url(/img/sub1040_topbanner_m.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 500px;
+        padding: 25px ;
+        display: block;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+    }
+
+}
+
+
+/* --------------------------
+   현장실습 css
+   ---------------------------*/
+.sub_section02 .sub_topbanner_wrap .top_pc{
+    display: block;
+    background:#f5f5f5 url(/img/sub104002_topbanner.png) no-repeat top right / cover;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0 40px 40px;
+    height: auto;
+    border-radius:15px;
+    overflow: hidden;
+}
+.sub_section02 .sub_topbanner_wrap .top_tab{
+    display: none;
+}
+.sub_section02 .sub_topbanner_wrap .top_m{
+    display: none;
+}
+@media (max-width: 800px) {
+    .sub_section02 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section02 .sub_topbanner_wrap .top_tab{
+        display: block;
+        background:#f5f5f5 url(/img/sub104002_topbanner_t.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 800px;
+        padding: 35px;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .sub_section02 .sub_topbanner_wrap .top_m{
+        display: none;
+    }
+
+}
+@media (max-width: 500px) {
+    .sub_section02 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section02 .sub_topbanner_wrap .top_tab{
+        display: none;
+    }
+    .sub_section02 .sub_topbanner_wrap .top_m{
+        background:#f5f5f5 url(/img/sub104002_topbanner_m.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 500px;
+        padding: 25px ;
+        display: block;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+    }
+
+}
+
+
+
+/* --------------------------
+   취업교과목 css
+   ---------------------------*/
+.sub_section03 .sub_topbanner_wrap .top_pc{
+    display: block;
+    background:#f5f5f5 url(/img/sub104003_topbanner.png) no-repeat top right / cover;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0 40px 40px;
+    height: auto;
+    border-radius:15px;
+    overflow: hidden;
+}
+.sub_section03 .sub_topbanner_wrap .top_tab{
+    display: none;
+}
+.sub_section03 .sub_topbanner_wrap .top_m{
+    display: none;
+}
+@media (max-width: 800px) {
+    .sub_section03 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section03 .sub_topbanner_wrap .top_tab{
+        display: block;
+        background:#f5f5f5 url(/img/sub104003_topbanner_t.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 800px;
+        padding: 35px;
+        text-align: center;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+    }
+    .sub_section03 .sub_topbanner_wrap .top_m{
+        display: none;
+    }
+
+}
+@media (max-width: 500px) {
+    .sub_section03 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section03 .sub_topbanner_wrap .top_tab{
+        display: none;
+    }
+    .sub_section03 .sub_topbanner_wrap .top_m{
+        display: block;
+        background:#f5f5f5 url(/img/sub104003_topbanner_m.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 500px;
+        padding: 25px;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+    }
+
+}
+
+
+
+/* --------------------------
+   경력개발프로그램 css
+   ---------------------------*/
+.sub_section04 .sub_topbanner_wrap .top_pc{
+    display: block;
+    background:#f5f5f5 url(/img/sub104004_topbanner.png) no-repeat top right / cover;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0 40px 40px;
+    height: auto;
+    border-radius:15px;
+    overflow: hidden;
+}
+.sub_section04 .sub_topbanner_wrap .top_tab{
+    display: none;
+}
+.sub_section04 .sub_topbanner_wrap .top_m{
+    display: none;
+}
+@media (max-width: 800px) {
+    .sub_section04 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section04 .sub_topbanner_wrap .top_tab{
+        display: block;
+        background:#f5f5f5 url(/img/sub104004_topbanner_t.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 800px;
+        padding: 35px;
+        height: 300px;
+        text-align: center;
+        border-radius:15px;
+        overflow: hidden;
+    }
+    .sub_section04 .sub_topbanner_wrap .top_m{
+        display: none;
+    }
+
+}
+@media (max-width: 500px) {
+    .sub_section04 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section04 .sub_topbanner_wrap .top_tab{
+        display: none;
+    }
+    .sub_section04 .sub_topbanner_wrap .top_m{
+        display: block;
+        background:#f5f5f5 url(/img/sub104004_topbanner_m.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 500px;
+        padding: 25px;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+    }
+
+}
+
+.color_bg_box_wrap {width: 100%; word-break: keep-all;}
+.color_bg_box_wrap .blue_bg_wrap{width:100%; background-color: #01387F; border-radius: 10px; padding:18px 0; }
+.color_bg_box_wrap .blue_bg_wrap .head_title{font-size: 18px; text-align: center; color: #fff;}
+.color_bg_box_wrap .blue_bg_wrap .middle_title{font-size: 16px; color:#B2F0FB; text-align: center; line-height: 26px; }
+.color_bg_box_wrap .gray_bg_wrap{width:100%; background-color: #F5F5F5; border-radius: 10px; padding:30px; text-align: center; }
+.color_bg_box_wrap .gray_bg_wrap p{line-height: 26px;}
+.color_bg_box_wrap .gray_bg_wrap .skyblue_txt{color: #00AFFF;}
+
+@media (max-width: 1000px){
+    .color_bg_box_wrap .blue_bg_wrap .head_title{font-size: 16px;}
+    .color_bg_box_wrap .blue_bg_wrap .middle_title{font-size: 14px; line-height: 26px; }
+    .color_bg_box_wrap .gray_bg_wrap p{font-size: 14px;}
+    .color_bg_box_wrap .gray_bg_wrap .skyblue_txt{font-size: 13px;}
+}
+
+
+
+/* --------------------------
+   채용박람회 설명회 css
+   ---------------------------*/
+.sub_section05 .sub_topbanner_wrap .top_pc{
+    display: block;
+    background:#f5f5f5 url(/img/sub104005_topbanner.png) no-repeat top right / cover;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0 40px 40px;
+    height: auto;
+    border-radius:15px;
+    overflow: hidden;
+}
+.sub_section05 .sub_topbanner_wrap .top_tab{
+    display: none;
+}
+.sub_section05 .sub_topbanner_wrap .top_m{
+    display: none;
+}
+@media (max-width: 800px) {
+    .sub_section05 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section05 .sub_topbanner_wrap .top_tab{
+        display: block;
+        background:#f5f5f5 url(/img/sub104005_topbanner_t.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 800px;
+        padding: 35px;
+        height: 300px;
+        text-align: center;
+        border-radius:15px;
+        overflow: hidden;
+    }
+    .sub_section05 .sub_topbanner_wrap .top_m{
+        display: none;
+    }
+
+}
+@media (max-width: 500px) {
+    .sub_section05 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section05 .sub_topbanner_wrap .top_tab{
+        display: none;
+    }
+    .sub_section05 .sub_topbanner_wrap .top_m{
+        display: block;
+        background:#f5f5f5 url(/img/sub104005_topbanner_m.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 500px;
+        padding: 25px;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+    }
+
+}
+.content_table .blue_txt{color:#0061AE; font-family: 'paybooc-Bold'; font-size: 15px; padding-bottom: 15px; }
+
+
+
+
+/* --------------------------
+   재직선배초청교육 css
+   ---------------------------*/
+.sub_section06 .sub_topbanner_wrap .top_pc{
+    display: block;
+    background:#f5f5f5 url(/img/sub104006_topbanner.png) no-repeat top right / cover;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0 40px 40px;
+    height: auto;
+    border-radius:15px;
+    overflow: hidden;
+}
+.sub_section06 .sub_topbanner_wrap .top_tab{
+    display: none;
+}
+.sub_section06 .sub_topbanner_wrap .top_m{
+    display: none;
+}
+@media (max-width: 800px) {
+    .sub_section06 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section06 .sub_topbanner_wrap .top_tab{
+        display: block;
+        background:#f5f5f5 url(/img/sub104006_topbanner_t.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 800px;
+        padding: 35px;
+        height: 300px;
+        text-align: center;
+        border-radius:15px;
+        overflow: hidden;
+    }
+    .sub_section06 .sub_topbanner_wrap .top_m{
+        display: none;
+    }
+
+}
+@media (max-width: 500px) {
+    .sub_section06 .sub_topbanner_wrap .top_pc{
+        display: none;
+    }
+    .sub_section06 .sub_topbanner_wrap .top_tab{
+        display: none;
+    }
+    .sub_section06 .sub_topbanner_wrap .top_m{
+        display: block;
+        background:#f5f5f5 url(/img/sub104006_topbanner_m.png) no-repeat top right / cover;
+        background-position: center;
+        width: 100%;
+        max-width: 500px;
+        padding: 25px;
+        height: 300px;
+        border-radius:15px;
+        overflow: hidden;
+    }
+
+}
+.content_right_txt_wrap{float: right; display: inline-block;}
+.content_right_txt_wrap ul li{float: left;}
+.content_right_txt_wrap .bule_bullet_txt{
+    list-style: none;
+    position:relative;
+    padding-left:18px;
+    padding-right:18px;
+}
+.content_right_txt_wrap .bule_bullet_txt:after{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #01387F;
+    border-radius: 50%;
+}
+.content_right_txt_wrap .black_bullet_txt{
+    list-style: none;
+    position:relative;
+    padding-left:18px;
+}
+.content_right_txt_wrap .black_bullet_txt:after{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #555555;
+    border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+    .content_right_txt_wrap{padding-top:15px; float: left;}
+}

@@ -1,0 +1,392 @@
+/* 스터디룸 예약 index */
+.content-studyroom{}
+.studyroom-index{}
+.studyroom-index .choose-campus{overflow:hidden;margin-top:30px;}
+.radio-campus{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+.radio-campus + label {
+    float:left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:calc(50% - 7px);
+    height:105px;
+    border-radius: 10px;
+    border: 1px solid #0061AE;
+    cursor: pointer;
+}
+.radio-campus:first-of-type + label{margin-right:7px;}
+.radio-campus:last-of-type + label{margin-left:7px;}
+.radio-campus + label img {width:71px;height:51px;}
+.radio-campus + label h2 {font-family:paybooc-Bold;font-size:21px;letter-spacing: -0.6px;color:#01387F;margin-left:27px;}
+.radio-campus:checked + label{background:#0061AE;}
+.radio-campus:checked + label h2{color:#fff;}
+
+.choose-calendar{}
+.choose-calendar .month-word{padding:50px 0 10px;}
+.choose-calendar .month-word h3{font-family:paybooc-Bold;font-size:25px;letter-spacing: -0.75px;color:#000;text-align: center;}
+.choose-calendar .choose-date{padding:30px 0 50px 0;border-bottom:0.5px solid #AEAEAE;overflow: hidden;}
+.choose-calendar .choose-date li {float:left;width:14.2857%;text-align: center;cursor:pointer;}
+.choose-calendar .choose-date li .day-word p{font-family:paybooc-Bold;font-size:20px;letter-spacing: -0.55px;color:#000;}
+.choose-calendar .choose-date li .day-word .weekend{color:#EE1414;}
+.choose-calendar .choose-date li .day-num{display: flex;align-items:center;justify-content:center;width:86px;height:86px;border-radius:50%;margin:8px auto 0;}
+.choose-calendar .choose-date li .day-num p{font-family: paybooc-Bold;font-size:35px;letter-spacing: -1.13px;color:#AEAEAE;text-align: center;}
+.choose-calendar .choose-date li.checked .day-num{background:#000;}
+.choose-calendar .choose-date li.checked .day-num p{color:#fff;}
+
+.choose-room {}
+.choose-room .chosen-date {padding:70px 0 30px 0;}
+.choose-room .chosen-date h4{font-family: paybooc-ExtraBold;font-size:30px;letter-spacing: -0.75px;color:#000;}
+
+.choose-room .available-room{overflow: hidden;}
+.choose-room .available-room .room-name h5,
+.choose-room .available-time .time-name h5{font-family: paybooc-Bold;font-size:20px;letter-spacing: -0.5px;color:#000;vertical-align: top;}
+.choose-room .available-room .room-name h5:before,
+.choose-room .available-time .time-name h5:before{position:relative;content:'';display:inline-block;width:8px;height:8px;margin-top:4px;border:4px solid #01387F;border-radius: 50%;margin-right:8px;vertical-align: top;}
+
+.room-list{margin-top:32px;}
+.room-option{
+    position: absolute;
+    display: none;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+.room-option + label {
+    float:left;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    width:calc(33.3333% - 14px);
+    height:150px;
+    border-radius: 10px;
+    border: 1px solid #898989;
+    margin-right:21px;
+    margin-bottom:24px;
+    cursor: pointer;
+}
+.room-list li:nth-of-type(3n) .room-option + label{margin-right:0;}
+.room-list div {text-align: center}
+.room-option + label .room-info {padding:21px 30px;}
+.room-option + label .room-info .info-subject {font-family:paybooc-ExtraBold;font-size:18px;color:#000;}
+.room-option + label .room-info p {font-size:14px;color:#555; line-height: 22px;}
+.room-option + label .room-info .info-desc {margin:5px 0 10px 0;}
+.room-option + label .room-info .info-time {margin-top:16px;}
+.room-option:checked + label{background:#01387F;}
+.room-option:checked + label .room-info .info-subject,
+.room-option:checked + label .room-info p{color:#fff;}
+
+.choose-room .available-time{;}
+.choose-room .available-time .time-name{padding:46px 0 23px;}
+.choose-room .available-time ol{padding: 0 0 66.5px;overflow: hidden;border-bottom:0.5px solid #AEAEAE;}
+.choose-room .available-time ol li{position:relative; float:left;width:calc(12.5% - 18px);height:55px;border-radius:28px;text-align: center;margin: 0 9px;}
+.choose-room .available-time ol li:after{content:'';position:absolute;width:1px;height:12px;top:50%;margin-top:-6px;right:-10px;background:#AEAEAE;z-index: 1000;}
+.choose-room .available-time ol li:last-of-type:after{display:none;}
+.choose-room .available-time ol li p{font-family: paybooc-ExtraBold;font-size:17px;line-height:55px;color:#000;cursor:pointer;}
+.choose-room .available-time ol li.selected-time{background: #00AFFF;}
+.choose-room .available-time ol li.selected-time p{color: #fff;}
+.choose-room .available-time ol li.disabled-time p{color: #AEAEAE;cursor:auto;}
+.choose-room .available-time ol div {text-align: center}
+
+.btn-wrap {padding: 75.5px 0 170px;text-align: center;}
+.btn-wrap .btn01{display:inline-block;width:271px;height:68px;line-height:68px;font-family: paybooc-Bold;font-size:18px;letter-spacing: -0.45px;border-radius: 10px;margin: 0 6px;vertical-align: top;cursor:pointer;}
+.btn-wrap .btn-next{color:#fff;background: #01387F;margin:0 auto;}
+
+
+/* 스터디룸 예약 create */
+.table02 {padding:30px 0 20px;}
+.table02 .table-title {}
+.table02 .table-title h1{font-family: paybooc-Bold;font-size:20px;letter-spacing: -0.5px;color:#000;vertical-align: top;}
+.table02 .table-title h1:before{position:relative;content:'';display:inline-block;width:8px;height:8px;margin-top:4px;border:4px solid #01387F;border-radius: 50%;margin-right:8px;vertical-align: top;}
+
+.table02 table {width:100%;margin-top:20px;border-top:2px solid #000;}
+.table02 table th {height:55px;font-size:16px;font-weight:400;letter-spacing:-0.4px;color:#555;background:#FBFBFB;text-align: left;padding: 0 30px;border-bottom:0.5px solid #AEAEAE;}
+.table02 table td {height:55px;font-size:16px;font-weight:300;padding:8px 25px;border-bottom:0.5px solid #AEAEAE;}
+.table02 table td p {letter-spacing: -0.4px;color:#000;}
+.table02 table td input {height:40px;border: 0.5px solid #C8C8C8;vertical-align: top; font-family: 'paybooc-Medium'; padding: 0 8px; font-size: 15px;}
+.table02 table td textarea {height:98px;resize:none;border: 0.5px solid #C8C8C8;margin-bottom:-5px; padding: 10px;}
+.table02 table td .btn02 {height:40px;font-size:14px;letter-spacing: -0.35px;color:#707070;border:0;vertical-align: top;}
+.table02 table td .btn-add {width:77px;background:#D2D2D2;}
+.table02 table td .btn-remove {width:77px; margin-left: 3px;}
+
+.table02 table td .text-content {padding:0 30px;}
+.table02 table td .text-content p {line-height:2;}
+
+/*체크박스*/
+.studyroom-checkCircle { /* 실제 체크박스는 화면에서 숨김 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0
+}
+
+/*새로 만들 체크박스와 간격 조정*/
+.studyroom-checkCircle + label {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    padding-left: 28px; /* 글자와 체크박스 사이의 간격을 변경 */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-size:14px;
+    letter-spacing: -0.35px;
+    color:#000;
+}
+
+/*체크박스 커스텀*/
+.studyroom-checkCircle + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%; /* 이 값을 변경해서 글자와의 정렬 */
+    width: 16px; /* 체크박스의 너비를 지정 */
+    height: 16px; /* 체크박스의 높이를 지정 */
+    line-height: 14px; /* 세로정렬을 위해 높이값과 일치 */
+    margin-top: -9px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #AEAEAE;
+    border-radius: 50%;
+}
+
+.studyroom-checkCircle:checked + label:after {
+    content:'';
+    position:absolute;
+    width:8px;
+    height:8px;
+    top: 50%;
+    left:0;
+    margin-top:-4px;
+    margin-left:5px;
+    border-radius: 50%;
+    background: #4E4E4E;
+}
+
+.studyroom-checkCircle:last-of-type + label {margin-left:20px;}
+
+.w167 {width:167px;}
+.w300 {width:300px;}
+.w683 {width:683px;}
+
+.btn-wrap .btn-cancel {color:#fff;background:#4E4E4E;}
+.btn-wrap .btn-save {color:#fff;background:#01387F;}
+
+
+/* 스터디룸 예약 list */
+.studyroom-list {min-height:500px;}
+.studyroom-list .table-head .no-show {display:block;padding: 32px 0 19.5px;text-align: right;}
+.studyroom-list .table-head .no-show p {font-size:16px;font-weight:bold;color:#EE1414;}
+.table01 {width:100%;}
+.table01 table {width:100%;border-collapse: collapse;border-spacing: 0;border-top:2px solid #000;}
+.table01 table thead tr th {position:relative;min-width:100px;height:50px;padding: 0 10px;font-size:15px;letter-spacing: -0.45px;background:#FBFBFB;border-bottom:1px solid #c8c8c8;}
+.table01 table thead tr th:after {content:'';display:block;position:absolute;width:1px;height:14px;right:-1px;top:50%;background:#AEAEAE;transform: translateY(-50%);z-index: 100; opacity: 30%;}
+.table01 table thead tr th:last-of-type:after {display:none;}
+.table01 table tbody tr td {height:60px;font-size: 16px;font-weight:400;background:#fff;padding: 10px 5px;text-align: center;border-bottom:1px solid #c8c8c8;}
+.table01 table tbody tr td p {font-size: 16px;color:#000;}
+.table01 table tbody tr td a {font-size: 16px;font-weight:bold;color:#0061AE;border-bottom: 1px solid #0061AE;}
+.table01 table tbody tr td input {height:33px;background:#fff;padding:0 10px;border:1px solid #969696;}
+.table01 table tbody tr td select {height:33px;background:#fff url(/img/select_arrow.png) no-repeat 95% / 8px;padding:0 10px;border:1px solid #969696;}
+.table01 table tbody tr td span {display:block;font-size:15px;letter-spacing:-0.45px;color:#3d3d3d;}
+.table01 table tbody tr .td_num,
+.table01 table tbody tr .td_campus,
+.table01 table tbody tr .td_createdAt {font-weight:300;}
+.table01 table tbody tr .td_status p {font-weight:bold;}
+.table01 table tbody tr .td_status .res-status_01 {color:#01387F;}
+.table01 table tbody tr .td_status .res-status_02 {color:#000;}
+.table01 table tbody tr .td_status .res-status_03 {color:#EE1414;}
+.table01 table tbody tr .td_usePeople,
+.table01 table tbody tr .td_deleteReservation {min-width:110px;}
+.table01 table tbody tr .td_deleteReservation .btn-deleteReservation {width:70px;height:27px;font-size:16px;color:#fff;background:#01387F;border:0;cursor:pointer;}
+.table01 table tr .visible-pc {display:table-cell;}
+.table01 table tr .visible-tablet {display:none;}
+
+.table-notice {display:flex;align-items:center;height:55px;padding:0 32px;background:#FBFBFB;margin-top:25.5px;}
+.table-notice .exclamation-mark {width:22px;height:22px;margin-top:-1px;margin-right:13px;vertical-align: top;}
+.table-notice p {display:inline-block;font-size:16px;letter-spacing: -0.4px;color:#000;}
+
+@media (max-width: 1280px) {
+    /*스터디룸 예약 index*/
+    .room-option + label {width:calc(50% - 7px);margin-right:14px;margin-bottom:22px;}
+    .room-list li:nth-of-type(2n) .room-option + label{margin-right:0;}
+    .room-list li:nth-of-type(3n) .room-option + label{margin-right:14px;}
+
+    .choose-room .available-time ol {padding: 0 0 35px;}
+    .choose-room .available-time ol li {width:calc(20% - 10px);margin: 5px 5px;}
+    .choose-room .available-time ol li:after {right:-5px;}
+    .choose-room .available-time ol li:nth-of-type(5n):after {display: none;}
+
+    .btn-wrap {padding:59.5px 0 150px;}
+
+    /*스터디룸 예약 create*/
+    .table02 table td textarea {width:100%;}
+
+    /*스터디룸 예약 list*/
+    .table01 table tr .visible-pc {display:none;}
+    .table01 table tr .visible-tablet {display:table-cell;}
+    .table01 table tbody tr .td_reservationInfo{}
+    .table01 table tbody tr .td_reservationInfo span{display:block;text-align: left;}
+    .table01 table tbody tr .td_reservationInfo span b{font-size:16px;font-weight:400;}
+    .table01 table tbody tr .td_reservationInfo span p{display:inline-block;font-weight:300;line-height:1.7;}
+}
+
+@media (max-width: 768px) {
+    /*스터디룸 예약 index*/
+    .studyroom-index .choose-campus {margin-top:21px;}
+    .radio-campus + label {width:100%;height:84px;margin-bottom: 10px;}
+    .radio-campus:first-of-type + label {margin-right:0}
+    .radio-campus:last-of-type + label {margin-left:0}
+    .radio-campus + label img {width:50px;height:40px;}
+    .radio-campus + label h2 {font-size:16px;letter-spacing: -0.4px;margin-left:25px;}
+
+    .choose-calendar .month-word {padding:27px 0 10px;}
+    .choose-calendar .month-word h3 {font-size:20px;letter-spacing: -0.5px;}
+    .choose-calendar .choose-date{padding:20px 0 36px;}
+    .choose-calendar .choose-date li .day-word p {font-size:16px;letter-spacing: -0.4px;}
+    .choose-calendar .choose-date li .day-num {width:50px;height:50px;margin:14px auto 0;}
+    .choose-calendar .choose-date li .day-num p {font-size:25px;letter-spacing: -0.55px;}
+
+    .choose-room .chosen-date {padding:40px 0;}
+    .choose-room .chosen-date h4 {font-size:20px;letter-spacing: -0.5px;}
+
+    .room-list {margin-top:22px;}
+    .choose-room .available-room .room-name h5,
+    .choose-room .available-time .time-name h5 {font-size:16px;letter-spacing: -0.4px;}
+    .choose-room .available-room .room-name h5:before,
+    .choose-room .available-time .time-name h5:before {width:6px;height:6px;border:3px solid #01387F;margin-right:7px;}
+
+    .room-option + label {width:100%;height:91px;margin-right:0;margin-bottom:10px;}
+    .room-option + label .room-info {padding:14px 22px;}
+    .room-option + label .room-info .info-subject {font-size:14px;}
+    .room-option + label .room-info p {font-size:11px;line-height:1.3;}
+    .room-option + label .room-info .info-time {margin-top:11px;}
+    .room-option + label .room-info .info-desc {margin:3px 0 2px;}
+
+    .choose-room .available-time .time-name {padding:27px 0 15px;}
+    .choose-room .available-time ol {padding: 0 0 30px;}
+    .choose-room .available-time ol li {width:calc(33.3333% - 22px);height:39px;margin:5px 33px 5px 0;}
+    .choose-room .available-time ol li:nth-of-type(3n) {margin:5px 0;}
+    .choose-room .available-time ol li:after {display:none;}
+    .choose-room .available-time ol li p {line-height:39px;font-size:14px;}
+
+    .btn-wrap {padding:45px 0 70px;}
+    .btn-wrap .btn01 {width:160px;height:46px;line-height:45px;font-size:13px;letter-spacing: -0.33px;}
+
+
+    /*스터디룸 예약 create*/
+    .table02 {padding:20px 0;}
+    .table02 .table-title h1 {font-size:16px;letter-spacing: -0.4px;}
+    .table02 .table-title h1:before {width:6px;height:6px;border:3px solid #01387F;margin-right:7px;}
+
+    .table02 table {margin-top:16.5px;}
+    .table02 table tr {display:block;border-bottom:0.5px solid #AEAEAE;}
+    .table02 table th {display:block;height:auto;font-size:14px;letter-spacing:-0.35px;padding:11px 11px 3px;border-bottom:0;background:#fff;}
+    .table02 table td {display:block;height:auto;font-size:14px;letter-spacing:-0.35px;padding:0;border-bottom:0;overflow: hidden;}
+    .table02 table td p{width:100%;line-height:1.2;margin:3px 11px 10px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+    .table02 table td span {display:inline-block;margin:5px 11px 8px;}
+
+    .table02 table td input{width:100%;margin: 3px 0 10px;}
+    .table02 table td textarea {width:100%;margin: 3px 0 5px;}
+    .table02 table td .input-add {float:left;width:calc(100% - 53px);margin: 3px 0 10px;}
+    .table02 table td .btn-add {float:left;width:53px;margin: 3px 0 10px;}
+    .table02 table td .btn-remove {float:left;width:53px;margin: 3px 0 10px;}
+
+    .table02 table .text-subject {display:block;line-height:55px;font-size:13px;letter-spacing:-0.33px;background:#FBFBFB;padding: 0 10px;}
+    .table02 table td .text-content {padding: 12px 10px;margin:0;}
+    .table02 table td .text-content p{font-size:13px;line-height:1.7;letter-spacing: -0.33px;white-space: normal;margin:0;}
+
+    .studyroom-checkCircle + label {display:flex;align-items:center;height:55px;font-size:13px;letter-spacing: -0.33px;padding:0 20px 0 35px;}
+    .studyroom-checkCircle + label:before {left:8px;}
+    .studyroom-checkCircle:checked + label:after {left:8px;}
+    .studyroom-checkCircle:last-of-type + label {margin-top:10px;margin-left:0;}
+
+    .btn-wrap {padding: 33px 7.5px 101px;}
+    .btn-wrap .btn-cancel,
+    .btn-wrap .btn-save {width:calc(50% - 8px);margin: 0 2.5px;}
+
+
+    /*스터디룸 예약 list*/
+    .studyroom-list .table-head .no-show {padding:23px 0 14px;}
+    .studyroom-list .table-head .no-show p{font-size:14px;}
+    .table01 table tr .visible-pc {display:none;}
+    .table01 table tr th.visible-tablet {height:40px;font-size:14px;}
+    .table01 table tr td.visible-tablet {display:block;}
+    .table01 table tr th,
+    .table01 table tr .th_num,
+    .table01 table tr .td_num{display: none;}
+    .table01 table thead tr th:after {display: none;}
+    .table01 table tbody tr {display:block;padding:7.5px 5px 12.5px;border-bottom:0.5px solid #AEAEAE;}
+    .table01 table tbody tr td{display: block;height:auto;padding:5px 5px 0;border-bottom:0;text-align: left;}
+    .table01 table tbody tr .td_reservationInfo{}
+    .table01 table tbody tr .td_reservationInfo span{display:block;}
+    .table01 table tbody tr .td_reservationInfo span b{font-size:13px;font-weight:400;}
+    .table01 table tbody tr .td_reservationInfo span p{display:inline-block;font-size:13px;}
+
+    .table01 table tbody tr .td_usePeople {font-size:13px;}
+    .table01 table tbody tr .td_usePeople:before {content:'사용인원 : ';font-weight:400; color:#000;text-decoration: none;}
+    .table01 table tbody tr .td_usePeople a {font-size:13px;}
+    .table01 table tbody tr .td_status {display:inline-block;font-size:13px;}
+    .table01 table tbody tr .td_status:before {content:'상태 : ';font-weight:400; color:#000;}
+    .table01 table tbody tr .td_status p{display:inline-block;font-size:13px;}
+    .table01 table tbody tr .td_deleteReservation {display:block;font-size:13px;padding:0;}
+    .table01 table tbody tr .td_deleteReservation .btn-deleteReservation{width:46px;height:27px;font-size:13px;margin:10px 5px 0;}
+
+    .table-notice {height:42px;padding: 0 15px;margin:17px 0 45px;}
+    .table-notice p {font-size:13px;letter-spacing: -0.33px;}
+}
+
+
+/*스터디룸 예약 모달창*/
+#studyroom-modal {display:none;}
+.modal-wrap {position:fixed;width:100vw;height:100vh;top:0;left:0;background:rgba(0,0,0,0.5);z-index: 10000;}
+.modal-content {position:relative;max-width:628px;min-height:662px;top:50%;margin: 0 auto;transform: translateY(-50%);}
+.modal-head {display:flex;align-items:center;justify-content:space-between;height:80px;padding:17.5px 69px 18px;background:#01387F;}
+.modal-head .modal-logo{width:330px;}
+.modal-head .btn-modal_close{float:right;width:28px;height:28px;background:transparent;border:0;cursor:pointer;}
+.modal-head .btn-modal_close img {width:100%;height:100%;}
+
+
+.modal-body{width:100%;min-height:582px;padding:38px 69px;background:#fff;}
+.modal-body .table02{padding:0 0 32.5px;}
+
+.modal-body .btn-wrap {padding:32.5px 0 0;}
+.modal-body .btn-wrap .btn-modal_close{width:100px;height:45px;font-size:16px;letter-spacing:-0.48px;color:#fff;background:#01387F;border-radius:10px;border:0;cursor:pointer;}
+
+
+@media (max-width:768px) {
+    .modal-wrap {padding: 0 15px;}
+    .modal-content {width:100%;}
+    .modal-head {height:69px;padding:19px 15px;}
+    .modal-head .modal-logo{width:208px;}
+    .modal-head .btn-modal_close {width:20px;height:20px;}
+
+    .modal-body {min-height:520px;padding:20px 15px 10px;}
+    .modal-body .table01 table tr {display:table-row;}
+    .modal-body .table01 table thead tr th:after {display: block;}
+    .modal-body .table01 table thead tr th:last-of-type:after {display: none;}
+    .modal-body .table01 table tr th,
+    .modal-body .table01 table tbody tr td {display:table-cell;width:33.3333%;min-width:85px;height:45px;font-size:13px;padding:0;text-align: center;}
+    .modal-body .table01 table tbody tr td p {font-size:13px;}
+
+    .modal-body .table02 {padding: 0 0 19.5px}
+    .modal-body .btn-wrap {padding:28px 0;}
+    .modal-body .btn-wrap .btn-modal_close{width:86px;height:39px;font-size:13px;letter-spacing:-0.39px;}
+
+}
